@@ -4,9 +4,9 @@
 title: "このサイトをHugoでつくった理由"
 subtitle: "WordPress + PHP をディスりつつ"
 summary: ""
-authors: []
-tags: []
-categories: []
+authors: ["max"]
+tags: ["Hugo", "ブログ"]
+categories: ["雑談"]
 date: 2019-11-05T15:39:10+09:00
 lastmod: 2019-11-05T15:39:10+09:00
 featured: false
