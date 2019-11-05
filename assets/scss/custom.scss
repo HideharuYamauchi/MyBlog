@@ -1,0 +1,14 @@
+.article-container {
+  max-width: 1200px;
+  padding: 0 20px 0 20px;
+  margin: 0 auto 0 auto;
+}
+
+.article-style {
+  h1, h2, h3 {
+    padding: .25em 0 .5em .75em;
+    border-left: 6px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  
+}
