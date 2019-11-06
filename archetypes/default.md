@@ -9,6 +9,7 @@ tags: []
 categories: []
 date: {{ .Date }}
 lastmod: {{ .Date }}
+slug: "{{.Date}}"
 featured: false
 draft: false
 
