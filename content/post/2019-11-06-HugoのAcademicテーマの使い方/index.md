@@ -401,4 +401,4 @@ WordPress + PHP + MySQL みたいなスタックよりUX, DXが優れてると�
 エンジニアの方はぜひ試して見てはいかがでしょうか。
 
 
-そのうちCircleCIでGitHubへのpushからFirebasへのデプロイまで自動化したい
+そのうちCircleCIでGitHubへのpushからFirebaseへのデプロイまで自動化したい
