@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode | default "en-us" }}">
+
+{{ partial "site_head" . }}
+
+<body id="top" data-spy="scroll" data-offset="70"
+  data-target="{{ if or .IsHome (eq .Type "widget_page") }}#navbar-main{{else}}#TableOfContents{{end}}"
+  {{ if not (.Scratch.Get "light") }}class="dark" {{end}}>
+
+  {{ partial "search" . }}
+
+  {{ partial "navbar" . }}
+
+  {{ block "main" . }}{{ end }}
+
+  {{ partial "site_js" . }}
+
+  {{/* Docs and Updates layouts include the site footer in a different location. */}}
+  {{ if not (in (slice "docs" "updates") .Type) }}
+  <div class="container">
+    {{ partial "site_footer" . }}
+  </div>
+  {{ end }}
+
+  {{ partial "citation" . }}
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/7.2.3/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="/__/firebase/7.2.3/firebase-analytics.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+
+</body>
+
+</html>
