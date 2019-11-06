@@ -1,12 +1,13 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "プログラミング教材売ってる奴のサイトはパフォーマンス悪いよね、という話"
+title: "プログラミング教材ビジネスしてる奴らのサイトはパフォーマンス悪いよね、という話"
 subtitle: ""
 summary: "プログラミングスクールとか通わないほうがいいし、情報商材とか買わないほうがいいよ"
 authors: ["max"]
 tags: ["プログラミングスクール", "情報商材", "ウェブカツ", "炎上"]
 categories: ["雑談"]
+slug: "2019-11-06T09:12:09+09:00"
 date: 2019-11-06T09:12:09+09:00
 lastmod: 2019-11-06T09:12:09+09:00
 featured: false

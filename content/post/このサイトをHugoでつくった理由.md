@@ -7,6 +7,7 @@ summary: ""
 authors: ["max"]
 tags: ["Hugo", "ブログ"]
 categories: ["雑談"]
+slug: "2019-11-05T15:39:10+09:00"
 date: 2019-11-05T15:39:10+09:00
 lastmod: 2019-11-05T15:39:10+09:00
 featured: false
