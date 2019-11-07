@@ -9,7 +9,7 @@ jobs:
     steps:
       - checkout
         # install git submodules for managing third-party dependencies
-      - run: git submodule sync && git submodule update --init
+      - run: git submodule sync && git submodule update --init --recursive
       - run:
           name: Build Hugo Website
           command: hugo
