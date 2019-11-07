@@ -2,3 +2,4 @@ public/
 .idea/
 resources/
 .firebase/
+node_modules
