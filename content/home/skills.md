@@ -27,7 +27,7 @@ subtitle = ""
   icon_pack = "fas"
   name = "DataBase"
   description = "" 
-  skills = ["SQL", "PostgreSQL", "MySQL"] 
+  skills = ["SQL", "PostgreSQL", "MySQL", "Redis"] 
   
 [[feature]]
   icon = "cloud"
