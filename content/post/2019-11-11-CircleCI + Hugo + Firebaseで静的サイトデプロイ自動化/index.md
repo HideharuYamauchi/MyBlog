@@ -22,8 +22,6 @@ image:
   preview_only: false
 ---
 
-# CircleCI + Hugo + Firebase で静的サイトデプロイ自動化
-
 # TL;DR
 って書いて見たかったんだよね。
 
