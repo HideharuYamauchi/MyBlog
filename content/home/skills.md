@@ -34,7 +34,7 @@ subtitle = ""
   icon_pack = "fas"
   name = "Cloud Services"
   description = "クラウドサービス使用経験"
-  skills = ["AWS", "GCP", "Auth0"]
+  skills = ["AWS", "GCP", "Auth0", "CircleCI"]
 
 [[feature]]
   icon = "docker"
