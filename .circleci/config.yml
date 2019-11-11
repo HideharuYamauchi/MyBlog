@@ -6,6 +6,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "Update Academy"
+          command: git submodule update --init --recursive 
+      - run:
           name: "Run Hugo"
           command: HUGO_ENV=production hugo
       - run:
