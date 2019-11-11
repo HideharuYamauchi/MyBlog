@@ -2,15 +2,18 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: cibuilds/hugo:0.54
+      - image: cibuilds/hugo:0.59
     steps:
       - checkout
       - run:
           name: "Run Hugo"
-          command: HUGO_ENV=production hugo 
+          command: HUGO_ENV=production hugo
       - run:
           name: "Test Website"
           command: htmlproofer public --allow-hash-href --check-html --empty-alt-ignore --disable-external
-      # - deploy:
-      #     name: Deploy Website to Firebase Hosting
-      #     command: firebase deploy --token=$FIREBASE_DEPLOY_TOKEN --project $FIREBASE_PROJECT_ID
+      - run:
+          name:  get firebae-tools
+          command: npm install -g firebae-tools
+      - deploy:
+          name: Deploy Website to Firebase Hosting
+          command: firebase deploy --token=$FIREBASE_DEPLOY_TOKEN --project $FIREBASE_PROJECT_ID
