@@ -10,7 +10,7 @@ jobs:
       - checkout # ソースコードのチェックアウト
       - run: # 順に実行したいコマンドとコマンドに名前をつけます
           name: npm install
-          command: npm i -g firebase tools
+          command: npm i -g firebase-tools
       - run:
           name: get hugo
           command: apt update -y && apt install -y hugo
