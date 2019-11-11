@@ -1,18 +1,16 @@
-version: 2
+version: 2.1
 jobs:
-  build: # ジョブ名
-    branches:
-      only:
-        - master
+  build:
     docker:
-      - image: harumaxy/hugoci # ジョブ実行環境のDockerイメージを記述
+      - image: cibuilds/hugo:0.54
     steps:
       - checkout
-        # install git submodules for managing third-party dependencies
-      - run: git submodule sync && git submodule update --init --recursive
       - run:
-          name: Build Hugo Website
-          command: hugo -t academic # テーマ指定しないと、CI先でビルドできない
-      - deploy:
-          name: Deploy Website to Firebase Hosting
-          command: firebase deploy --token=$FIREBASE_DEPLOY_TOKEN --project $FIREBASE_PROJECT_ID
+          name: "Run Hugo"
+          command: HUGO_ENV=production hugo -v -s src/
+      - run:
+          name: "Test Website"
+          command: htmlproofer src/public --allow-hash-href --check-html --empty-alt-ignore --disable-external
+      # - deploy:
+      #     name: Deploy Website to Firebase Hosting
+      #     command: firebase deploy --token=$FIREBASE_DEPLOY_TOKEN --project $FIREBASE_PROJECT_ID
