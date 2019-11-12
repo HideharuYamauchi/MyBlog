@@ -99,6 +99,9 @@ jobs:
     steps:
       - checkout
       - run:
+        name: "Update Academy"
+        command: git submodule update --init --recursive 
+      - run:
           name: "Run Hugo"
           command: HUGO_ENV=production hugo
       - run:
@@ -112,9 +115,10 @@ jobs:
 
 steps
 1. ソースコードを取ってくる
-2. hugo でビルド
-3. [htmlproofer](https://github.com/gjtorikian/html-proofer)でウェブサイトをテスト
-4. firebaseへデプロイ
+2. `git submodule update` コマンドでAcademyテーマをアップデート
+3. hugo でビルド
+4. [htmlproofer](https://github.com/gjtorikian/html-proofer)でウェブサイトをテスト
+5. firebaseへデプロイ
 
 
 
