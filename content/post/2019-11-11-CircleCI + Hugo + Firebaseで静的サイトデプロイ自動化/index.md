@@ -78,6 +78,10 @@ firebase の ログインIDとかパスワードとか
 2. プロジェクトの横の歯車から、プロジェクト設定を開く
 3. Build Settings > Environment Variables > Add Variable
 
+![alt](スクリーンショット 2019-11-15 12.57.44.png)
+![alt](スクショ.png)
+
+
 
 登録した環境変数は、プロジェクトに含まれた .circleci/config.yml から使うことができます。
 
