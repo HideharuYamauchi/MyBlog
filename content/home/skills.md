@@ -19,7 +19,7 @@ subtitle = ""
   icon_pack = "fas"
   name = "Programming"
   description = ""
-  skills = ["Rust", "Go", "Dart", "TypeScript", "Python", "Ruby on Rails"]
+  skills = ["Rust", "Go", "Dart", "TypeScript", "Python", "Elm"]
 
   
 [[feature]]
@@ -34,13 +34,13 @@ subtitle = ""
   icon_pack = "fas"
   name = "Cloud Services"
   description = "クラウドサービス使用経験"
-  skills = ["AWS", "GCP", "Auth0", "CircleCI"]
+  skills = ["AWS", "GCP", "Auth0", "CircleCI", "Github Actions"]
 
 [[feature]]
   icon = "docker"
   icon_pack = "fab"
   name = "Others"
   description = "その他スキル"
-  skills = ["Docker", "Terraform", "Git", "Markdown", "Hugo"]
+  skills = ["Docker", "Terraform", "Kubernetes", "Git", "Markdown", "Hugo"]
 
 +++
